@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coin Switch</title>
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="navbar.css" />
+  </head>
+  <body>
+    <header>
+      <div id="head-container">
+        <div style="text-align: left">
+          <img
+            src="image_files/coinswitch_logo.jpg"
+            alt="coinswitch_logo"
+            width="200px"
+          />
+        </div>
+        <div>Products</div>
+        <div>Coins</div>
+        <div>Ventures</div>
+        <div>Blog</div>
+        <div>Company</div>
+        <div><button>Login To Pro</button></div>
+      </div>
+    </header>
+    <main>
+      <div id="main-container">
+        <div class="boxes"></div>
+        <div id="content">
+          <img
+            src="image_files/coinswitch-ventures.png"
+            alt="coinswitch_logo"
+            width="200px"
+          />
+          <h1 style="margin-top: 70px">Your Innovation</h1>
+          <h1 style="color: rgb(102, 148, 249)">Our Fuel</h1>
+          <div class="text">
+            <p>
+              CoinSwitch Ventures invests in the most promising Web3 and
+              blockchain projects in India. Does that sound like you?
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
+<script>
+  let container = document.querySelector(".boxes");
+
+  for (let i = 0; i < 17 * 10; i++) {
+    let col = document.createElement("div");
+    col.classList.add("col");
+    container.append(col);
+  }
+</script>
