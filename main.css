@@ -4,24 +4,34 @@
   display: grid;
   grid-template-columns: repeat(17, 1fr);
   background: linear-gradient(
-    180deg,
+    to bottom,
     rgba(225, 233, 254, 0.8),
     rgba(225, 233, 254, 0)
   );
   position: absolute;
   z-index: 1;
+  border-radius: 30px 30px 0px 0px ;
+  overflow: hidden;
 }
+
 
 .col {
   border: 0.5px solid hsla(240, 1%, 86%, 0.847);
-  z-index: 1;
+  z-index: -1;
+  transition: 1s ease-out;
+}
+
+.col:hover{
+    background-color: #758694;
 }
 
 #content {
-  position: absolute;
+  position: relative;
   padding-top: 95px;
   z-index: 10;
   width: 95%;
+  background-color: transparent;
+  pointer-events: none;
 }
 
 #main-container {
